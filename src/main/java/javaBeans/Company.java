@@ -10,7 +10,7 @@ public class Company {
   private String compName, password, email;
   private List <Coupon> couponList;
 
-    public Company() {
+    public Company () {
     }
 
     public long getId() {
@@ -51,5 +51,16 @@ public class Company {
 
     public void setCouponList(List<Coupon> couponList) {
         this.couponList = couponList;
+    }
+
+    @Override
+    public String toString () {
+        return "Company { " +
+                "id= " + id +
+                ", compName=' "  + compName   + '\'' +
+                ", password=' "  + password   + '\'' +
+                ", email=' "     + email      + '\'' +
+                ", couponList= " + couponList +
+                '}';
     }
 }

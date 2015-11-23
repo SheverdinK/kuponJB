@@ -44,4 +44,14 @@ public class Customer {
     public void setCouponList(List<Coupon> couponList) {
         this.couponList = couponList;
     }
+
+    @Override
+    public String toString () {
+        return "Customer{ " +
+                " id= "          + id          +
+                ", custName= "   + custName    + '\'' +
+                ", password=' "  + password    + '\'' +
+                ", couponList= " + couponList  +
+                '}';
+    }
 }

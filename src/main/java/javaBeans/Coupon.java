@@ -11,6 +11,7 @@ public class Coupon {
     private Date startDate, endDate;
     private int amount;
     private double price;
+    CouponType type;
 
     public Coupon() {
     }
@@ -77,5 +78,20 @@ public class Coupon {
 
     public void setPrice(double price) {
         this.price = price;
+    }
+
+    @Override
+    public String toString () {
+        return "Coupon { " +
+                "  id= "         + id       +
+                ",  title=' "    + title    + '\'' +
+                ",  message=' "  + message  + '\'' +
+                ",  imageURL=' " + imageURL + '\'' +
+                ",  startDate= " + startDate+
+                ",  endDate= "   + endDate  +
+                ",  amount= "    + amount   +
+                ",  price= "     + price    +
+                ",  type= "      + type     +
+                '}';
     }
 }
