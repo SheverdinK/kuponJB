@@ -13,7 +13,7 @@ public interface CompanyDAOi {
 
     boolean        login               (String  compName, String password);
     Company getCompany          (long id);
-    void           creatCompany        (Company company);
+    void           createCompany        (Company company);
     void           removeCompany       (Company company);
     void           updateCompany       (Company company);
     List <Coupon>  getCouponlist       ();

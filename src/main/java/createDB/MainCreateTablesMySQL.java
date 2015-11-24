@@ -4,7 +4,6 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
-
 /**
  * Created by sheverdinK on 23.11.2015.
  */
@@ -21,7 +20,7 @@ class MainCreateTablesMySQL implements ConstantI {
         }
 
         // open a connection to the DB
-        Connection connection = DriverManager.getConnection(DB_URL, USER_NAME_mySQL, PASSWORD_mySQL);
+        Connection connection = DriverManager.getConnection(DB_URL_REMOTE, USER_NAME_mySQL, PASSWORD_mySQL_REMOTE);
 
         Statement statement = connection.createStatement();
 

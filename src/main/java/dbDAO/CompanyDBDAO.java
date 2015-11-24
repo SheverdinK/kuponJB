@@ -18,7 +18,7 @@ public class CompanyDBDAO  implements CompanyDAOi{
         return null;
     }
 
-    public void creatCompany (Company company) {
+    public void createCompany (Company company) {
 
     }
 
