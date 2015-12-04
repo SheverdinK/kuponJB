@@ -1,16 +1,16 @@
-package javaBeans;
+package dataSet;
 
 import java.util.List;
 
 /**
  * Created by Kostya on 22.11.2015.
  */
-public class Company {
+public class CompanyDataSet {
   private long id;
   private String compName, password, email;
-  private List <Coupon> couponList;
+  private List <CouponDataSet> couponList;
 
-    public Company () {
+    public CompanyDataSet() {
     }
 
     public long getId() {
@@ -45,17 +45,17 @@ public class Company {
         this.email = email;
     }
 
-    public List<Coupon> getCouponList() {
+    public List<CouponDataSet> getCouponList() {
         return couponList;
     }
 
-    public void setCouponList(List<Coupon> couponList) {
+    public void setCouponList(List<CouponDataSet> couponList) {
         this.couponList = couponList;
     }
 
     @Override
     public String toString () {
-        return "Company { " +
+        return "CompanyDataSet { " +
                 "id= " + id +
                 ", compName=' "  + compName   + '\'' +
                 ", password=' "  + password   + '\'' +

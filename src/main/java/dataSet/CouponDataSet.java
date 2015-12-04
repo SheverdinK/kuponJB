@@ -1,11 +1,11 @@
-package javaBeans;
+package dataSet;
 
 import java.util.Date;
 
 /**
  * Created by Kostya on 22.11.2015.
  */
-public class Coupon {
+public class CouponDataSet {
     private long id;
     private String title, message, imageURL;
     private Date startDate, endDate;
@@ -13,7 +13,7 @@ public class Coupon {
     private double price;
     CouponType type;
 
-    public Coupon() {
+    public CouponDataSet() {
     }
 
     public long getId() {
@@ -82,7 +82,7 @@ public class Coupon {
 
     @Override
     public String toString () {
-        return "Coupon { " +
+        return "CouponDataSet { " +
                 "  id= "         + id       +
                 ",  title=' "    + title    + '\'' +
                 ",  message=' "  + message  + '\'' +

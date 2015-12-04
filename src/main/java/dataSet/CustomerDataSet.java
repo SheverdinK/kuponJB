@@ -1,16 +1,16 @@
-package javaBeans;
+package dataSet;
 
 import java.util.List;
 
 /**
  * Created by Kostya on 22.11.2015.
  */
-public class Customer {
+public class CustomerDataSet {
     private long id;
     private String custName, password;
-    private List<Coupon> couponList;
+    private List<CouponDataSet> couponList;
 
-    public Customer() {
+    public CustomerDataSet() {
     }
 
     public long getId() {
@@ -37,17 +37,17 @@ public class Customer {
         this.password = password;
     }
 
-    public List<Coupon> getCouponList() {
+    public List<CouponDataSet> getCouponList() {
         return couponList;
     }
 
-    public void setCouponList(List<Coupon> couponList) {
+    public void setCouponList(List<CouponDataSet> couponList) {
         this.couponList = couponList;
     }
 
     @Override
     public String toString () {
-        return "Customer{ " +
+        return "CustomerDataSet{ " +
                 " id= "          + id          +
                 ", custName= "   + custName    + '\'' +
                 ", password=' "  + password    + '\'' +

@@ -1,11 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="817544648">
-    <data-source source="LOCAL" name="MySQL - kuponprojectdb@localhost" uuid="ed3d329e-07c6-46fa-9c75-c4579bdfc768">
+  <component name="DataSourceManagerImpl" format="xml" hash="2883800392">
+    <data-source source="LOCAL" name="MySQL - coupondb@localhost" uuid="21dbff77-a825-4059-84bf-015bd556d5ab">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306/kuponprojectdb</jdbc-url>
+      <jdbc-url>jdbc:mysql://localhost:3306/coupondb</jdbc-url>
+      <driver-properties>
+        <property name="zeroDateTimeBehavior" value="convertToNull" />
+        <property name="tinyInt1isBit" value="false" />
+        <property name="characterEncoding" value="utf8" />
+        <property name="characterSetResults" value="utf8" />
+        <property name="yearIsDateType" value="false" />
+      </driver-properties>
+    </data-source>
+    <data-source source="LOCAL" name="MySQL - coupondbtest@localhost" uuid="bfef094b-3156-4ae8-8772-11e9b93e7cd6">
+      <driver-ref>mysql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/coupondbtest</jdbc-url>
       <driver-properties>
         <property name="zeroDateTimeBehavior" value="convertToNull" />
         <property name="tinyInt1isBit" value="false" />

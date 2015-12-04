@@ -1,10 +1,10 @@
-package javaBeans;
+package dataSet;
 
 /**
  * Created by Kostya on 22.11.2015.
  */
 public enum CouponType {
-    RESTURANS, ELECTRICITY, FOOD, HEALTH, SPORT, CAMPING, TRAVELING
+    RESTAURANTS, ELECTRICITY, FOOD, HEALTH, SPORT, CAMPING, TRAVELING
 
 
 
