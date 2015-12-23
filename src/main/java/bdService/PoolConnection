@@ -1,0 +1,96 @@
+/**
+ * Created by Kostya on 09.12.2015.
+ */
+/*public class kuponPullConnction {*/
+
+    /*
+    package kuponim;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.util.ArrayList;
+
+
+public class ConnectionPool {
+
+	private static final String DB_DRIVER = "org.apache.derby.jdbc.ClientDriver";
+	private static final String DB_CONNECTION = "jdbc:derby://localhost:1527/kuponimDB";//kuponimDB ili kupon
+	private static final String DB_USER = "root";
+	private static final String DB_PASSWORD = "root";
+
+	private static ConnectionPool myPool=null;
+
+	ArrayList<Connection> poolArray = new ArrayList<Connection>();;
+
+	private ConnectionPool()
+	{
+			try {
+				Class.forName(DB_DRIVER);
+
+			} catch (ClassNotFoundException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
+			try {
+				for (int i=0; i<5;i++)
+					poolArray.add(DriverManager.getConnection(DB_CONNECTION));
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
+	}
+
+
+	static ConnectionPool getInstance()
+	{
+		if (myPool==null)
+			myPool = new ConnectionPool();
+		return myPool;
+	}
+
+	public synchronized Connection getConnection()
+	{
+		Connection dbConnection = null;
+
+		while (poolArray.isEmpty())
+		{
+			try {
+				wait();// chtobi proverit nado 5 raz obratitsya i so sleep + tut sdelat' syso
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
+				}
+		dbConnection = 	poolArray.get(0);
+		poolArray.remove(0);
+
+		return dbConnection;
+	}
+
+	public synchronized void returnConnection(Connection con){
+		poolArray.add(con);
+		notify();//mogno samoi proveri nado tut notify ili notifyAll
+
+	}
+
+	public void closeAllConnections(){
+		//vse zakrit // ubrat tam gde bili zakrirya..
+
+		for (int i=0; i<5;i++)
+			try {
+				poolArray.get(i).close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
+	}
+
+
+}
+     */
+//}
